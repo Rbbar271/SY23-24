@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-for (int i = 0; i < 101; i++)
-{
-    Console.WriteLine(i);
-}
-Console.ReadKey();
+
+    Console.WriteLine("enter your number");
+    int num1 = 0;
+    int.TryParse(Console.ReadLine(),out num1);
+    Console.WriteLine(num1 * 2);    
+
