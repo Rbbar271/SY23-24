@@ -2,7 +2,7 @@
 Console.WriteLine("enter an amount of leters");
 int liters = 0;
 int.TryParse(Console.ReadLine(), out liters);
-Console.WriteLine("1) in gallons  \n2) in quarts  \n3) in pints  \n4) in cups  \n5) in ounces \n 6) in tablespoons \n 7) in teaspoons \n 8) in gills");
+Console.WriteLine("1) in US gallons  \n2) in US quarts  \n3) in US pints  \n4) in US cups  \n5) in US ounces \n6) in US tablespoons \n7) in US teaspoons \n8) in US gills");
 int num1 = 0;
 int.TryParse(Console.ReadLine(),out num1);
 switch (num1)
