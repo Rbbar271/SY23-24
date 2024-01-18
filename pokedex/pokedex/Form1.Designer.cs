@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.nametextBox = new System.Windows.Forms.TextBox();
             this.typetextBox = new System.Windows.Forms.TextBox();
             this.namelabel = new System.Windows.Forms.Label();
             this.typelabel = new System.Windows.Forms.Label();
@@ -47,6 +47,11 @@
             this.type2label = new System.Windows.Forms.Label();
             this.AttacktextBox = new System.Windows.Forms.TextBox();
             this.Attacklabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox = new System.Windows.Forms.TextBox();
+            this.savebutton = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.debugBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,12 +63,12 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // nametextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(188, 67);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(146, 22);
-            this.textBox1.TabIndex = 1;
+            this.nametextBox.Location = new System.Drawing.Point(188, 67);
+            this.nametextBox.Name = "nametextBox";
+            this.nametextBox.Size = new System.Drawing.Size(146, 22);
+            this.nametextBox.TabIndex = 1;
             // 
             // typetextBox
             // 
@@ -206,11 +211,62 @@
             this.Attacklabel.TabIndex = 18;
             this.Attacklabel.Text = "Attack";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(36, 255);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 50);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "<";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox
+            // 
+            this.textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox.Location = new System.Drawing.Point(92, 256);
+            this.textBox.Name = "textBox";
+            this.textBox.Size = new System.Drawing.Size(50, 49);
+            this.textBox.TabIndex = 23;
+            this.textBox.Text = "0";
+            this.textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // savebutton
+            // 
+            this.savebutton.Location = new System.Drawing.Point(340, 67);
+            this.savebutton.Name = "savebutton";
+            this.savebutton.Size = new System.Drawing.Size(75, 23);
+            this.savebutton.TabIndex = 24;
+            this.savebutton.Text = "save";
+            this.savebutton.UseVisualStyleBackColor = true;
+            this.savebutton.Click += new System.EventHandler(this.savebutton_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(148, 256);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(50, 50);
+            this.button2.TabIndex = 25;
+            this.button2.Text = ">";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // debugBox
+            // 
+            this.debugBox.Location = new System.Drawing.Point(340, 93);
+            this.debugBox.Multiline = true;
+            this.debugBox.Name = "debugBox";
+            this.debugBox.Size = new System.Drawing.Size(367, 157);
+            this.debugBox.TabIndex = 26;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.debugBox);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.savebutton);
+            this.Controls.Add(this.textBox);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Attacklabel);
             this.Controls.Add(this.AttacktextBox);
             this.Controls.Add(this.type2label);
@@ -228,7 +284,7 @@
             this.Controls.Add(this.typelabel);
             this.Controls.Add(this.namelabel);
             this.Controls.Add(this.typetextBox);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nametextBox);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -242,7 +298,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox nametextBox;
         private System.Windows.Forms.TextBox typetextBox;
         private System.Windows.Forms.Label namelabel;
         private System.Windows.Forms.Label typelabel;
@@ -260,6 +316,11 @@
         private System.Windows.Forms.Label type2label;
         private System.Windows.Forms.TextBox AttacktextBox;
         private System.Windows.Forms.Label Attacklabel;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox;
+        private System.Windows.Forms.Button savebutton;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox debugBox;
     }
 }
 
