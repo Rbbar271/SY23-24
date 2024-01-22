@@ -46,22 +46,30 @@ namespace pokedex
         private void savebutton_Click(object sender, EventArgs e)
         {
             debugBox.Clear();
+            debugBox.Text += " " + namelabel.Text + ": ";
             debugBox.Text += " " + nametextBox.Text + " " ;
             debugBox.Text += " | ";
+            debugBox.Text += " " + levellabel.Text + ": ";
             debugBox.Text += " " + leveltextBox.Text + " " ;
             debugBox.Text += " | ";
+            debugBox.Text += " " + hplabel.Text + ": ";
             debugBox.Text += " " + hptextBox.Text + " " ;
             debugBox.Text += " | ";
+            debugBox.Text += " " + Attacklabel.Text + ": ";
             debugBox.Text += " " + AttacktextBox.Text + " " ;
             debugBox.Text += " | ";
+            debugBox.Text += " " + explabel.Text + ": ";
             debugBox.Text += " " + exptextBox.Text + " " ;
             debugBox.Text += " | ";
+            debugBox.Text += " " + genlabel.Text + ": ";
             debugBox.Text += " " + gentextBox.Text + " " ;
             debugBox.Text += " | ";
+            debugBox.Text += " " + typelabel.Text + ": ";
             debugBox.Text += " " + typetextBox.Text + " " ;
             if (type2textBox != null && type2textBox.Text != "nune")
             {
                 debugBox.Text += " | ";
+                debugBox.Text += " " + type2label.Text + ": ";
                 debugBox.Text += " " + type2textBox.Text + " ";
             }
             if (shinycheckBox.Checked)
