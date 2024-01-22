@@ -39,6 +39,7 @@ namespace pokedex
             {
                 StreamReader infile = new StreamReader("pokemon.txt");
                 string s = infile.ReadToEnd();
+                infile.Close();
             }
         }
 
@@ -47,7 +48,7 @@ namespace pokedex
             debugBox.Clear();
             debugBox.Text += " " + nametextBox.Text + " " ;
             debugBox.Text += " | ";
-            debugBox.Text += " " + levellabel.Text + " " ;
+            debugBox.Text += " " + leveltextBox.Text + " " ;
             debugBox.Text += " | ";
             debugBox.Text += " " + hptextBox.Text + " " ;
             debugBox.Text += " | ";
@@ -74,6 +75,9 @@ namespace pokedex
                 debugBox.Text += " legandery ";
             }
 
+            StreamWriter outfile = new StreamWriter("pokemon.txt");
+            outfile.WriteLine(debugBox.Text);
+            outfile.Close();
         }
     }
 }
